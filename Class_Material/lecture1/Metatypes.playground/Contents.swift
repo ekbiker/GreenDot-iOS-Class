@@ -9,6 +9,7 @@ protocol MyProtocol{}
 let myProtocolType: MyProtocol.Protocol = MyProtocol.self
 let str = stringType.init("some string")
 
+let int = Int.init(32)
 
 //example use
 class BaseClass {

@@ -19,46 +19,6 @@ print(myLunchChoice)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //enums can have a raw value, like in c or c#
 enum LunchStarRating: String {
     case one = "One"
@@ -70,52 +30,6 @@ enum LunchStarRating: String {
 let myRating = LunchStarRating.three
 let myRatingRaw = LunchStarRating.three.rawValue
 //raw values can be String, Character, or any Int or Float
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
