@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GD Lunch.xcodeproj">
+      location = "self:/Users/tliao/Documents/Tech/iOS Class/GreenDot-iOS-Class/GD_Lunch/GDLunch.xcodeproj">
    </FileRef>
 </Workspace>
