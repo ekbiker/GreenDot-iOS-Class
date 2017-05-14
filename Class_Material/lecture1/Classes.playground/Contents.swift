@@ -4,12 +4,14 @@ import UIKit
 
 class MyClass1 {
     var property: String?
-    let defaultedProp = "properties can take default values"
+    var defaultedProp = "properties can take default values"
+    
     lazy var lazyProperty = ComplicatedManager() //lazy instantiation is not thread safe
     //Global constants and variables are always computed lazily
     static let staticProperty: Int = 0
     
     let stored: String = "I'm a stored propertey"
+    
     var computed: String {
         //computed properties, no storage backing
         get {
@@ -25,8 +27,8 @@ class MyClass1 {
     var observed: String = "you can add observers for stored properties" {
         //not for lazy
         //observers not called during init
-        willSet(newValue) {
-            print("willSet: new: \(newValue)")
+        willSet(anyValue) {
+            print("willSet: new: \(anyValue)")
         }
         didSet(oldValue) {
             //observed = oldValue //legal, does not cause recurrsion
@@ -40,6 +42,10 @@ class MyClass1 {
         
     }
 }
+let instance = MyClass1()
+instance.observed = "some string"
+
+
 class ComplicatedManager {
     var filename = "data.txt"
 }
