@@ -12,6 +12,16 @@
 		B221B8111E92C07500FF9323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B221B80F1E92C07500FF9323 /* LaunchScreen.storyboard */; };
 		B221B81C1E92C07500FF9323 /* GD_LunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221B81B1E92C07500FF9323 /* GD_LunchTests.swift */; };
 		B221B8271E92C07600FF9323 /* GD_LunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221B8261E92C07600FF9323 /* GD_LunchUITests.swift */; };
+		B24BD4A01EC0B06C006E662C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BD49E1EC0B06C006E662C /* LoginVC.swift */; };
+		B24BD4A11EC0B06C006E662C /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24BD49F1EC0B06C006E662C /* LoginVC.xib */; };
+		B24BD4A41EC0F19B006E662C /* RouterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BD4A21EC0F19B006E662C /* RouterVC.swift */; };
+		B24BD4A51EC0F19B006E662C /* RouterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24BD4A31EC0F19B006E662C /* RouterVC.xib */; };
+		B24BD4A71EC0F41A006E662C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BD4A61EC0F41A006E662C /* Styles.swift */; };
+		B24BD4AB1EC0F567006E662C /* MainFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BD4A91EC0F567006E662C /* MainFeedVC.swift */; };
+		B24BD4AC1EC0F567006E662C /* MainFeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24BD4AA1EC0F567006E662C /* MainFeedVC.xib */; };
+		B24BD4AF1EC1E6CD006E662C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BD4AD1EC1E6CD006E662C /* RegisterVC.swift */; };
+		B24BD4B01EC1E6CD006E662C /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24BD4AE1EC1E6CD006E662C /* RegisterVC.xib */; };
+		B24BD4B21EC1EB9F006E662C /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BD4B11EC1EB9F006E662C /* TextFields.swift */; };
 		B27360991EA64C8600BF0613 /* DynamicAnimators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27360981EA64C8600BF0613 /* DynamicAnimators.swift */; };
 		B2753C6F1EA3C18D0078B4B4 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753C6E1EA3C18D0078B4B4 /* BaseVC.swift */; };
 		B2753C721EA3C22E0078B4B4 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753C701EA3C22E0078B4B4 /* SplashVC.swift */; };
@@ -19,6 +29,7 @@
 		B2753C751EA3C58B0078B4B4 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753C741EA3C58B0078B4B4 /* Buttons.swift */; };
 		B2753C771EA3D13B0078B4B4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753C761EA3D13B0078B4B4 /* Colors.swift */; };
 		B2753C791EA416180078B4B4 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753C781EA416180078B4B4 /* Views.swift */; };
+		B2BF87FC1EC8B41800D25A75 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF87FB1EC8B41800D25A75 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +61,16 @@
 		B221B8221E92C07500FF9323 /* GD LunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GD LunchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B221B8261E92C07600FF9323 /* GD_LunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GD_LunchUITests.swift; sourceTree = "<group>"; };
 		B221B8281E92C07600FF9323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24BD49E1EC0B06C006E662C /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B24BD49F1EC0B06C006E662C /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		B24BD4A21EC0F19B006E662C /* RouterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterVC.swift; sourceTree = "<group>"; };
+		B24BD4A31EC0F19B006E662C /* RouterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterVC.xib; sourceTree = "<group>"; };
+		B24BD4A61EC0F41A006E662C /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		B24BD4A91EC0F567006E662C /* MainFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedVC.swift; sourceTree = "<group>"; };
+		B24BD4AA1EC0F567006E662C /* MainFeedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedVC.xib; sourceTree = "<group>"; };
+		B24BD4AD1EC1E6CD006E662C /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		B24BD4AE1EC1E6CD006E662C /* RegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		B24BD4B11EC1EB9F006E662C /* TextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		B27360981EA64C8600BF0613 /* DynamicAnimators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimators.swift; sourceTree = "<group>"; };
 		B2753C6E1EA3C18D0078B4B4 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		B2753C701EA3C22E0078B4B4 /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
@@ -57,6 +78,7 @@
 		B2753C741EA3C58B0078B4B4 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		B2753C761EA3D13B0078B4B4 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B2753C781EA416180078B4B4 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		B2BF87FB1EC8B41800D25A75 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				B2753C6D1EA3C1540078B4B4 /* Base */,
-				B221B8061E92C07500FF9323 /* AppDelegate.swift */,
+				B24BD4A81EC0F52D006E662C /* MainFeed */,
+				B24BD49D1EC0AFAE006E662C /* Login Register */,
+				B24BD49C1EC0AFA3006E662C /* Main */,
 				B221B80D1E92C07500FF9323 /* Assets.xcassets */,
 				B221B80F1E92C07500FF9323 /* LaunchScreen.storyboard */,
 				B221B8121E92C07500FF9323 /* Info.plist */,
-				B2753C701EA3C22E0078B4B4 /* SplashVC.swift */,
-				B2753C711EA3C22E0078B4B4 /* SplashVC.xib */,
 			);
 			path = "GD Lunch";
 			sourceTree = "<group>";
@@ -136,14 +158,49 @@
 			path = "GD LunchUITests";
 			sourceTree = "<group>";
 		};
+		B24BD49C1EC0AFA3006E662C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B221B8061E92C07500FF9323 /* AppDelegate.swift */,
+				B24BD4A21EC0F19B006E662C /* RouterVC.swift */,
+				B24BD4A31EC0F19B006E662C /* RouterVC.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B24BD49D1EC0AFAE006E662C /* Login Register */ = {
+			isa = PBXGroup;
+			children = (
+				B2753C701EA3C22E0078B4B4 /* SplashVC.swift */,
+				B2753C711EA3C22E0078B4B4 /* SplashVC.xib */,
+				B24BD49E1EC0B06C006E662C /* LoginVC.swift */,
+				B24BD49F1EC0B06C006E662C /* LoginVC.xib */,
+				B24BD4AD1EC1E6CD006E662C /* RegisterVC.swift */,
+				B24BD4AE1EC1E6CD006E662C /* RegisterVC.xib */,
+			);
+			name = "Login Register";
+			sourceTree = "<group>";
+		};
+		B24BD4A81EC0F52D006E662C /* MainFeed */ = {
+			isa = PBXGroup;
+			children = (
+				B24BD4A91EC0F567006E662C /* MainFeedVC.swift */,
+				B24BD4AA1EC0F567006E662C /* MainFeedVC.xib */,
+			);
+			name = MainFeed;
+			sourceTree = "<group>";
+		};
 		B2753C6D1EA3C1540078B4B4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B27360981EA64C8600BF0613 /* DynamicAnimators.swift */,
 				B2753C6E1EA3C18D0078B4B4 /* BaseVC.swift */,
 				B2753C741EA3C58B0078B4B4 /* Buttons.swift */,
+				B27360981EA64C8600BF0613 /* DynamicAnimators.swift */,
 				B2753C761EA3D13B0078B4B4 /* Colors.swift */,
 				B2753C781EA416180078B4B4 /* Views.swift */,
+				B24BD4A61EC0F41A006E662C /* Styles.swift */,
+				B24BD4B11EC1EB9F006E662C /* TextFields.swift */,
+				B2BF87FB1EC8B41800D25A75 /* UIImage.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -259,7 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2753C731EA3C22E0078B4B4 /* SplashVC.xib in Resources */,
+				B24BD4AC1EC0F567006E662C /* MainFeedVC.xib in Resources */,
+				B24BD4A51EC0F19B006E662C /* RouterVC.xib in Resources */,
 				B221B8111E92C07500FF9323 /* LaunchScreen.storyboard in Resources */,
+				B24BD4B01EC1E6CD006E662C /* RegisterVC.xib in Resources */,
+				B24BD4A11EC0B06C006E662C /* LoginVC.xib in Resources */,
 				B221B80E1E92C07500FF9323 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,12 +347,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2753C791EA416180078B4B4 /* Views.swift in Sources */,
+				B24BD4A71EC0F41A006E662C /* Styles.swift in Sources */,
 				B2753C721EA3C22E0078B4B4 /* SplashVC.swift in Sources */,
+				B24BD4A01EC0B06C006E662C /* LoginVC.swift in Sources */,
+				B24BD4AB1EC0F567006E662C /* MainFeedVC.swift in Sources */,
+				B24BD4A41EC0F19B006E662C /* RouterVC.swift in Sources */,
 				B2753C771EA3D13B0078B4B4 /* Colors.swift in Sources */,
 				B2753C6F1EA3C18D0078B4B4 /* BaseVC.swift in Sources */,
 				B27360991EA64C8600BF0613 /* DynamicAnimators.swift in Sources */,
+				B24BD4B21EC1EB9F006E662C /* TextFields.swift in Sources */,
+				B24BD4AF1EC1E6CD006E662C /* RegisterVC.swift in Sources */,
 				B221B8071E92C07500FF9323 /* AppDelegate.swift in Sources */,
 				B2753C751EA3C58B0078B4B4 /* Buttons.swift in Sources */,
+				B2BF87FC1EC8B41800D25A75 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

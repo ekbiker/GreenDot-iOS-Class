@@ -15,8 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        configureAppearance()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = SplashVC(nibName: "SplashVC", bundle: nil)
+        let vc = RouterVC(nibName: "RouterVC", bundle: nil)  //to demonstrate using the system's designated initializer directly
+        //or we could have called SplashVC(nibNameInferredForBundle: nil), our custom convenience initializer.  In which we used dynamic typing to figure out the type's name.
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
         return true
     }
@@ -43,6 +47,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    //MARK: Configuration
+    func configureAppearance() {
+        //global styling of UI elements
+        
+        //nav bar
+        UINavigationBar.appearance().tintColor = .white  //changes bar button text color
+        UINavigationBar.appearance().barTintColor = Style.Color.darkMustard
+        UINavigationBar.appearance().setTitleVerticalPositionAdjustment(0.0, for: .default) //move down ?px
+        
+        //tNOTE: both the backgroundImage and the shadow image must be set to remove the shadow
+        let image = UIImage(color: Style.Color.darkMustard, size: CGSize(width: 1,height: 1))
+        UINavigationBar.appearance().setBackgroundImage(image, for: .default)
+        UINavigationBar.appearance().shadowImage = image
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont.systemFont(ofSize: 22.0, weight: UIFontWeightHeavy)]
+        
+        //bar button items
+        UIBarButtonItem.appearance().setTitleTextAttributes([
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont.systemFont(ofSize: 15.0)], for: .normal)
+    }
 
 }
 

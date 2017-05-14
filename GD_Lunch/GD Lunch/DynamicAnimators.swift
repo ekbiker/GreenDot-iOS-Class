@@ -10,13 +10,12 @@ import Foundation
 import UIKit
 
 /* we can reuse these dynamic animators throught out the app */
-
 class DynamicAnimatorDropFromTop: UIDynamicAnimator, UIDynamicAnimatorDelegate {
     
-    fileprivate var finished: (DynamicAnimatorDropFromTop) -> Void = {(TLDynamicAnimatorDropFromTop) in}
+    private var finished: (DynamicAnimatorDropFromTop) -> Void = {(DynamicAnimatorDropFromTop) in}
     
     convenience init(referenceView: UIView, items: [UIDynamicItem], pt1: CGPoint, pt2: CGPoint,
-                     finished:@escaping (DynamicAnimatorDropFromTop)->Void )
+                     finished: @escaping (DynamicAnimatorDropFromTop)->Void )
     {
         self.init(referenceView: referenceView)
         self.delegate = self

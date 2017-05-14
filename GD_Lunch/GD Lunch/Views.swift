@@ -43,6 +43,19 @@ public extension UIView {
             layer.borderColor = newValue.cgColor
         }
     }
+    
+    //for dismisser view
+    func findFirstResponder() -> UIResponder? {
+        if isFirstResponder {
+            return self
+        }
+        for subview in subviews {
+            if let firstResponder = subview.findFirstResponder() {
+                return firstResponder
+            }
+        }
+        return nil
+    }
 }
 
 @IBDesignable
@@ -73,3 +86,41 @@ class CircleV: RoundedV {
         cornerRadius = bounds.size.width/2
     }
 }
+
+class DismisserV: UIView {
+    
+    var blockDismisser = false
+    var onDismiss: (()->Void)?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setup()
+    }
+    
+    func setup() {
+        backgroundColor = UIColor.clear
+        
+        // Add tap gesture recognizer to remove keyboard
+        let tap = UITapGestureRecognizer(target:self, action:#selector(viewTapped))
+        tap.cancelsTouchesInView = false
+        addGestureRecognizer(tap)
+    }
+    
+    @objc fileprivate func viewTapped() {
+        if !blockDismisser {
+            window?.findFirstResponder()?.resignFirstResponder()
+            onDismiss?()
+        }
+    }
+}
+

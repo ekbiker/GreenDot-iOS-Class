@@ -9,10 +9,9 @@
 import Foundation
 import UIKit
 
-public extension String {
-    public var length: Int {get {return characters.count}}
+fileprivate extension String {
+    var length: Int {get {return characters.count}}
 }
-
 
 public extension UIColor {
     
@@ -81,49 +80,7 @@ public extension UIColor {
         let g = CGFloat(arc4random_uniform(UInt32(range)))
         let b = CGFloat(arc4random_uniform(UInt32(range)))
         return UIColor(red:r/255.0, green:g/255.0, blue:b/255.0, alpha:1.0)
-    }
-    
-    //our app colors
-    public static var _mustard: UIColor {
-        get{return UIColor(hex: "CDBC6C")}
-    }
-    
-    public static var _darkMustard: UIColor {
-        get{return UIColor(hex: "C97D26")}
-    }
-    
-    public static var _green: UIColor {
-        get{return UIColor(hex: "1A873C")}
-    }
-    
-    //grays
-    public static var _veryLightGray: UIColor {
-        get{return UIColor(hex: "FCFCFC")}
-    }
-    
-    public static var _lighterGray: UIColor {
-        get{return UIColor(hex: "F5F5F5")}
-    }
-    
-    public static var _lightGray: UIColor {
-        get{return UIColor(hex: "E6E6E6")}
-    }
-    
-    public static var _mediumGray: UIColor {
-        get{return UIColor(hex: "CCCCCC")}
-    }
-    
-    public static var _darkGray: UIColor {
-        get{return UIColor(hex: "999999")}
-    }
-    
-    public static var _darkerGray: UIColor {
-        get{return UIColor(hex: "53585F")}
-    }
-    
-    public static var _veryDarkGray: UIColor {
-        get{return UIColor(hex: "333333")}
-    }
+    }    
 }
 
 
