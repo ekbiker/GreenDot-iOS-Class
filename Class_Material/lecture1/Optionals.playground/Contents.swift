@@ -2,7 +2,7 @@
 
 import UIKit
 
-var opt: Optional<Int> = Optional<Int>.none
+var opt: Int?
 opt = Optional<Int>.some(1234)
 
 print(opt)
@@ -10,6 +10,7 @@ print(opt!)
 
 //optional chaining
 opt?.description
+
 
 if opt?.description != nil {
     print("opt is not nil")
@@ -23,7 +24,6 @@ testScores["Dave"]?[0] = 91
 testScores["Bev"]?[0] += 1
 testScores["Brian"]?[0] = 72
 // the "Dave" array is now [91, 82, 84] and the "Bev" array is now [80, 94, 81]
-
 
 
 //checking for optionals
